@@ -1,0 +1,50 @@
+LINK=C:\Users\Kage\Desktop\Sculpt\Sculpt\Fresh\SculptPrint4Impressions.xlsx
+CC = 150
+
+;Import token images
+htmlimage= ,FleshT,"Images\newf.png", .32, .32,PB
+htmlimage= ,JazzT,"Images\JAZZT.png", .32, .32,PB
+HTMLIMAGE= ,WeirdT,"Images\WeirdT.png", .32, .32,PB
+htmlimage= ,shovelT,"Images\shovelpic.png", .32, .32,PB
+htmlimage= ,ChargeT,"Images\gear.png", .4, .4,PB
+htmlimage= ,ChargeMID,"Images\gear.png", .55, .55,PB
+htmlimage= ,ChargeBIG,"Images\gear.png", .8, .8,P,0,0
+htmlimage= ,LargeHexes,"Images\Threehexes.png", .7, .7,P,0,0
+htmlimage= ,threesmallhexes,"Images\Threehexes.png", .4, .4,P,0,0
+htmlimage= ,threehexline,"Images\Threehexline.png", .6, .6,P,0,0
+
+
+
+VISUAL=HVPY, 63, 88
+;Accessory Background(snap)(size)
+IMAGE=,"Images/Impression Card V2.png",{0}%,0%,{6400/63}%,{8900/88}%
+;Charges Font
+HTMLFONT=ChargeFont,Verdana,9,,#000000
+;Charges Text(snap)
+HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3800/63}%,{1500/88}%,{6657/200}%,{1799/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+;Impression Background(snap)
+FONT=Book Antiqua,15,T,#000000
+;Title Text(snap)
+TEXT="1-{(NAME)}",[NAME],{100/63}%,{400/88}%,{59069/600}%,{769/75}%
+;Type Font(snap)
+FONT=Verdana,10,T,#000000,#000000
+;Type Text(snap)
+TEXT="1-{(TYPE)}",[TYPE],{-100/63}%,{1400/88}%,{26657/600}%,{769/75}%
+;Body Font(snap)
+HTMLFONT=BodyFont,Verdana,9,,#000000
+;Body(snap)
+HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{370/63}%,{2100/88}%,{8801/100}%,{3523/50}%,#FFFFFF,0,T
+ENDVISUAL
+
+DISPLAY = "Output\Impressions1.png",1,9
+DISPLAY = "Output\Impressions2.png",10,18
+DISPLAY = "Output\Impressions3.png",19,27
+DISPLAY = "Output\Impressions4.png",28,36
+DISPLAY = "Output\Impressions5.png",37,46
+
+
+
+
+
+
+
