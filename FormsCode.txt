@@ -1,4 +1,4 @@
-LINK=SculptPrint4Forms.xlsx
+LINK=Forms.xlsx
 CC = 150
 
 ;Import token images
@@ -35,7 +35,7 @@ htmlimage= ,RiverHex,"Images\Inline\RiverHex.png", 1.6, 1.5, PB
 
 VISUAL=HVPY, 63, 88
 ;Accessory Background(snap)(size)
-IMAGE=,"Images/Armour Card V3.png",{-100/63}%,0%,{6400/63}%,{8900/88}%
+IMAGE=,"Images/Templates/Armour Card V3.png",{-100/63}%,0%,{6400/63}%,{8900/88}%
 ;Charges Font
 HTMLFONT=ChargeFont,Verdana,9,,#000000
 ;Charges Text(snap)
