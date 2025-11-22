@@ -1,4 +1,4 @@
-LINK=Forms.xlsx
+LINK=CardFiles\Forms.xlsx
 CC = 150
 
 ;Import token images
@@ -15,33 +15,34 @@ htmlimage= ,ChargeBIG,"Images\Inline\gear.png", .8, .8,P,0,0
 htmlimage= ,Hex2wide,"Images\Inline\Hex1a.png", .64, .32,PM
 htmlimage= ,Hex1a,"Images\Inline\Hex1a.png", .32, .32,PM
 htmlimage= ,Hex1b,"Images\Inline\Hex1b.png", 0.538, 0.546, PM
+htmlimage= ,HexbLarge,"Images\Inline\Hex1b.png", 0.8, 0.8, PM
 htmlimage= ,Hex2,"Images\Inline\Hex2.png", 0.8, 0.774, PM
 htmlimage= ,Hex3,"Images\Inline\Hex3.png", 1.324, 1.226, PM
 
 VISUAL=HVPY, 63, 88
 ;Accessory Background(snap)(size)
-IMAGE=,"Images/Templates/Armour Card V3.png",{-100/63}%,0%,{6400/63}%,{8900/88}%
+IMAGE=,"Images/Templates/FormBorderV4.png",{-100/63}%,0%,{6500/63}%,{8900/88}%
 ;Charges Font
 HTMLFONT=ChargeFont,Verdana,9,,#000000
 ;Charges Text(snap)
-HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3800/63}%,{1500/88}%,{6657/200}%,{1799/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3200/63}%,{1400/88}%,{1653/40}%,{2561/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Impression Background(snap)
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
-TEXT="1-{(NAME)}",[NAME],{100/63}%,{400/88}%,{59069/600}%,{769/75}%
+TEXT="1-{(NAME)}",[NAME],{-100/63}%,{200/88}%,{59069/600}%,{769/75}%
 ;Type Font(snap)
 FONT=Verdana,10,T,#000000,#000000
 ;Type Text(snap)
-TEXT="1-{(TYPE)}",[TYPE],{-100/63}%,{1400/88}%,{26657/600}%,{769/75}%
+TEXT="1-{(TYPE)}",[TYPE],{-300/63}%,{1200/88}%,{26657/600}%,{769/75}%
 ;Body Font(snap)
 HTMLFONT=BodyFont,Verdana,9,,#000000
 ;Body(snap)
-HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{400/63}%,{2100/88}%,{8801/100}%,{3523/50}%,#FFFFFF,0,T
+HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{200/63}%,{2000/88}%,{56107/600}%,{3523/50}%,#FFFFFF,0,T
 ENDVISUAL
 
-DISPLAY = "Output\Forms1.png",1,9
-DISPLAY = "Output\Forms2.png",10,18
-DISPLAY = "Output\Forms3.png",19,27
+DISPLAY = "Output\Forms\Forms1.png",1,9
+DISPLAY = "Output\Forms\Forms2.png",10,18
+DISPLAY = "Output\Forms\Forms3.png",19,27
 
 
 

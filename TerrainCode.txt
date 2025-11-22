@@ -1,4 +1,4 @@
-LINK=SculptPrint4Terrain.xlsx
+LINK=CardFiles\SculptPrint4Terrain.xlsx
 CC = 150
 
 ;Import token images

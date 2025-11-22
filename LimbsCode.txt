@@ -1,4 +1,4 @@
-LINK= Limbs.xlsx
+LINK= CardFiles\Limbs.xlsx
 CC = 150
 
 ;Import token images

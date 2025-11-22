@@ -1,4 +1,4 @@
-LINK= LimbsConditionalTest.xlsx
+LINK= CardFiles\LimbsConditionalTest.xlsx
 CC = 150
 
 ;Import token images

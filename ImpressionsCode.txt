@@ -1,4 +1,4 @@
-LINK=Impressions.xlsx
+LINK=CardFiles\Impressions.xlsx
 CC = 150
 
 ;Import token images
@@ -6,7 +6,7 @@ CC = 150
 htmlimage= ,FleshT,"Images\Inline\newf.png", .32, .32,PB
 htmlimage= ,JazzT,"Images\Inline\JAZZT.png", .32, .32,PB
 HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png", .32, .32,PB
-htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.1, .32,PB
+htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.2, .32,PB
 htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB
 htmlimage= ,ChargeBIG,"Images\Inline\gear.png", .8, .8,P,0,0
@@ -37,9 +37,9 @@ VISUAL=HVPY, 62, 88
 ;Accessory Background(snap)(size)
 IMAGE=,"Images/Templates/ImpressionBorderv4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
 ;Charges Font
-HTMLFONT=ChargeFont,Verdana,9,,#000000
+HTMLFONT=ChargeFont,Verdana,9,,#000000,center
 ;Charges Text(snap)
-HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3700/62}%,{1500/88}%,{6657/200}%,{1799/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3700/62}%,{900/88}%,{677/15}%,{3577/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Impression Background(snap)
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
@@ -51,14 +51,14 @@ TEXT="1-{(TYPE)}",[TYPE],{300/62}%,{1200/88}%,{26657/600}%,{769/75}%
 ;Body Font(snap)
 HTMLFONT=BodyFont,Verdana,9,,#000000
 ;Body(snap)
-HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{300/62}%,{2100/88}%,{2299/25}%,{3523/50}%,#FFFFFF,0,T
+HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{200/62}%,{2000/88}%,{56107/600}%,{3523/50}%,#FFFFFF,0,T
 ENDVISUAL
 
-DISPLAY = "Output\Impressions1.png",1,9
-DISPLAY = "Output\Impressions2.png",10,18
-DISPLAY = "Output\Impressions3.png",19,27
-DISPLAY = "Output\Impressions4.png",28,36
-DISPLAY = "Output\Impressions5.png",37,46
+DISPLAY = "Output\Impressions\Impressions1.png",1,9
+DISPLAY = "Output\Impressions\Impressions2.png",10,18
+DISPLAY = "Output\Impressions\Impressions3.png",19,27
+DISPLAY = "Output\Impressions\Impressions4.png",28,36
+DISPLAY = "Output\Impressions\Impressions5.png",37,45
 
 
 

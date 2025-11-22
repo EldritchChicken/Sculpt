@@ -1,4 +1,4 @@
-LINK=SculptPrint4Status.xlsx
+LINK=CardFiles\SculptPrint4Status.xlsx
 CC = 150
 
 ;Import token images
