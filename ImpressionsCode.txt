@@ -33,25 +33,25 @@ htmlimage= ,LOSicon,"Images\Inline\LOSicon.png", 1.068, 0.564, PM
 htmlimage= ,Whiskey_Xplo,"Images\Inline\Whisky_Xplo.png",1.324, 1.226, PB
 htmlimage= ,RiverHex,"Images\Inline\RiverHex.png", 1.6, 1.5, PB
 
-VISUAL=HVPY, 63, 88
+VISUAL=HVPY, 62, 88
 ;Accessory Background(snap)(size)
-IMAGE=,"Images/Templates/Impression Card V2.png",{0}%,0%,{6400/63}%,{8900/88}%
+IMAGE=,"Images/Templates/ImpressionBorderv4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
 ;Charges Font
 HTMLFONT=ChargeFont,Verdana,9,,#000000
 ;Charges Text(snap)
-HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3800/63}%,{1500/88}%,{6657/200}%,{1799/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3700/62}%,{1500/88}%,{6657/200}%,{1799/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Impression Background(snap)
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
-TEXT="1-{(NAME)}",[NAME],{100/63}%,{400/88}%,{59069/600}%,{769/75}%
+TEXT="1-{(NAME)}",[NAME],{-100/62}%,{300/88}%,{59069/600}%,{769/75}%
 ;Type Font(snap)
 FONT=Verdana,10,T,#000000,#000000
 ;Type Text(snap)
-TEXT="1-{(TYPE)}",[TYPE],{-100/63}%,{1400/88}%,{26657/600}%,{769/75}%
+TEXT="1-{(TYPE)}",[TYPE],{300/62}%,{1200/88}%,{26657/600}%,{769/75}%
 ;Body Font(snap)
 HTMLFONT=BodyFont,Verdana,9,,#000000
 ;Body(snap)
-HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{370/63}%,{2100/88}%,{8801/100}%,{3523/50}%,#FFFFFF,0,T
+HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{300/62}%,{2100/88}%,{2299/25}%,{3523/50}%,#FFFFFF,0,T
 ENDVISUAL
 
 DISPLAY = "Output\Impressions1.png",1,9
