@@ -56,6 +56,8 @@ FONT=Verdana,10,T,#000000,#000000
 TEXT="1-{(TYPE)}",[TYPE],{330/62}%,{1200/88}%,{26657/800}%,{769/75}%,LEFT
 ;Body Font(snap)
 HTMLFONT=BodyFont,Verdana,9,,#000000
+;Center Font
+HTMLFONT=CenterFont,Verdana,9,,#000000,CENTER
 ;Body(snap)
 
 
@@ -111,12 +113,26 @@ IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/ReactionTest.png"
 HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
+;add Crit Effects
+IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,
 
-;HTMLTEXT="1-{(Effect 2)}",[Effect 2],{200/62}%,[Effect 2 Y],{56107/600}%,{6443/90}%,#FFFFFF,0,T
+IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
+
+IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/critTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
+
+
+
 ENDVISUAL
 
 DISPLAY = "Output\All\AllCards1.png",1,9
-
+DISPLAY = "Output\All\AllCards2.png",10,18
+DISPLAY = "Output\All\AllCards3.png",19,27
+DISPLAY = "Output\All\AllCards4.png",28,36
 
 
 
