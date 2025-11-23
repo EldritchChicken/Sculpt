@@ -27,6 +27,7 @@ htmlimage= ,CavePaint1,"Images\Inline\CavePaint1.png", 1.324,1.228,PB
 htmlimage= ,CavePaint2,"Images\Inline\CavePaint2.png", 2.372, 0.32, PB
 htmlimage= ,GateHex,"Images\Inline\GateHex.png", 0.8, 0.768, PB
 htmlimage= ,Hex1a,"Images\Inline\Hex1a.png", .32, .32,PM
+htmlimage= ,Hex2wide,"Images\Inline\Hex2wide.png", .54, .32,PM
 htmlimage= ,Hex1b,"Images\Inline\Hex1b.png", 0.538, 0.546, PM
 htmlimage= ,Hex2,"Images\Inline\Hex2.png", 0.8, 0.774, PM
 htmlimage= ,Hex3,"Images\Inline\Hex3.png", 1.324, 1.226, PM
