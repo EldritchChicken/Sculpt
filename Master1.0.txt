@@ -1,4 +1,4 @@
-LINK= CardFiles\AllInOne.xlsx
+LINK= CardFiles\Master1.0.xlsx
 CC = 150
 
 ;Import token images

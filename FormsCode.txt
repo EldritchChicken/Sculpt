@@ -6,14 +6,15 @@ CC = 150
 htmlimage= ,FleshT,"Images\Inline\newf.png", .32, .32,PB
 htmlimage= ,JazzT,"Images\Inline\JAZZT.png", .32, .32,PB
 HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png", .32, .32,PB
-htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.1, .32,PB
+htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.2, .32,PB
 htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB
 htmlimage= ,ChargeBIG,"Images\Inline\gear.png", .8, .8,P,0,0
 
 ;Player card images
-htmlimage= ,Hex2wide,"Images\Inline\Hex1a.png", .64, .32,PM
+htmlimage= ,Hex2wide,"Images\Inline\Hex2wide.png", .54, .32,PM
 htmlimage= ,Hex1a,"Images\Inline\Hex1a.png", .32, .32,PM
+
 htmlimage= ,Hex1b,"Images\Inline\Hex1b.png", 0.538, 0.546, PM
 htmlimage= ,HexbLarge,"Images\Inline\Hex1b.png", 0.8, 0.8, PM
 htmlimage= ,Hex2,"Images\Inline\Hex2.png", 0.8, 0.774, PM
@@ -25,7 +26,7 @@ IMAGE=,"Images/Templates/FormBorderV4.png",{-100/63}%,0%,{6500/63}%,{8900/88}%
 ;Charges Font
 HTMLFONT=ChargeFont,Verdana,9,,#000000
 ;Charges Text(snap)
-HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3200/63}%,{1400/88}%,{1653/40}%,{2561/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{3400/63}%,{1400/88}%,{2471/60}%,{2561/225}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Impression Background(snap)
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
@@ -37,7 +38,7 @@ TEXT="1-{(TYPE)}",[TYPE],{-300/63}%,{1200/88}%,{26657/600}%,{769/75}%
 ;Body Font(snap)
 HTMLFONT=BodyFont,Verdana,9,,#000000
 ;Body(snap)
-HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{200/63}%,{2000/88}%,{56107/600}%,{3523/50}%,#FFFFFF,0,T
+HTMLTEXT="1-{(BODY HTML)}",[BODY HTML],{200/63}%,{2300/88}%,{56107/600}%,{3523/50}%,#FFFFFF,0,T
 ENDVISUAL
 
 DISPLAY = "Output\Forms\Forms1.png",1,9
