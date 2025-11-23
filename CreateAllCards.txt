@@ -1,4 +1,4 @@
-LINK= CardFiles\LimbsConditionalTest.xlsx
+LINK= CardFiles\AllInOne.xlsx
 CC = 150
 
 ;Import token images
@@ -38,19 +38,22 @@ dpi = 300
 
 VISUAL=HVPY, 62, 88
 ;Accessory Background(snap)(size)
-IMAGE=,"Images/Templates/LimbBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/LimbBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/ImpressionBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+
 ;Charges Font
 HTMLFONT=ChargeFont,Verdana,9,,#000000,center
 ;Charges Text(snap)
 HTMLTEXT="1-{(Charges)}",[Charges],{4000/62}%,{800/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
-;Impression Background(snap)
+;Title Font
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
 TEXT="1-{(NAME)}",[NAME],0%,{200/88}%,{59069/600}%,{769/75}%
 ;Type Font(snap)
 FONT=Verdana,10,T,#000000,#000000
 ;Type Text(snap)
-TEXT="1-{(TYPE)}",[TYPE],{-400/62}%,{1200/88}%,{26657/600}%,{769/75}%
+TEXT="1-{(TYPE)}",[TYPE],{330/62}%,{1200/88}%,{26657/800}%,{769/75}%,LEFT
 ;Body Font(snap)
 HTMLFONT=BodyFont,Verdana,9,,#000000
 ;Body(snap)
@@ -95,11 +98,24 @@ IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/PassiveTest.png",{
 HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
+;add Reactions
+IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1],{200/62}%,[E1Y],{56107/600}%,5,#FFFFFF,0,T
+
+IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
+
+IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
+
 
 ;HTMLTEXT="1-{(Effect 2)}",[Effect 2],{200/62}%,[Effect 2 Y],{56107/600}%,{6443/90}%,#FFFFFF,0,T
 ENDVISUAL
 
-DISPLAY = "Output\Limbs\LimbsTest.png",1,2
+DISPLAY = "Output\All\AllCards1.png",1,9
 
 
 
