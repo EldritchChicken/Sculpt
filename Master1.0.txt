@@ -6,6 +6,8 @@ CC = 150
 htmlimage= ,FleshT,"Images\Inline\newf.png", .32, .32,PB
 htmlimage= ,JazzT,"Images\Inline\JAZZT.png", .32, .32,PB
 HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png", .32, .32,PB
+HTMLIMAGE= ,compT,"Images\Inline\compT.png", .32, .32,PB
+HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png", .32, .32,PB
 htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.1, .32,PB
 htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB
@@ -44,9 +46,11 @@ IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/ImpressionBorderV4.png",
 IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
 
 ;Charges Font
-HTMLFONT=ChargeFont,Verdana,9,,#000000,center
+HTMLFONT=ChargeFont,Verdana,11,,#000000
 ;Charges Text(snap)
-HTMLTEXT="1-{(Charges)}",[Charges],{4000/62}%,{800/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],{4000/62}%,{800/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],{4000/62}%,{800/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3300/62}%,{1300/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Title Font
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
@@ -65,75 +69,86 @@ HTMLFONT=CenterFont,Verdana,9,,#000000,CENTER
 ;add Actives
 IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
 HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,T
-HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1],{200/62}%,[E1Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 2 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 3 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
 ;add Attacks
 IMAGE=LABELRANGE([Effect 1 Type],"Attack"),"Images/Templates/AttackTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
 HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,T
-HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1],{200/62}%,[E1Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 2 Type],"Attack"),"Images/Templates/AttackTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 3 Type],"Attack"),"Images/Templates/AttackTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
 ;add Passives
 IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
 HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,T
-HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1],{200/62}%,[E1Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
 ;add Reactions
 IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
 HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,T
-HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1],{200/62}%,[E1Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
 ;add Crit Effects
 IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,5,#FFFFFF,0,
+HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1 Title],{200/62}%,[E1TY],{56157/600}%,5,#FFFFFF,0,
 
 IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{200/62}%,[E2Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T
 
 IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/critTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{200/62}%,[E3Y],{56107/600}%,5,#FFFFFF,0,T
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T
 HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T
 
 
 
 ENDVISUAL
 
-DISPLAY = "Output\All\AllCards1.png",1,9
-DISPLAY = "Output\All\AllCards2.png",10,18
-DISPLAY = "Output\All\AllCards3.png",19,27
-DISPLAY = "Output\All\AllCards4.png",28,36
+;DISPLAY = "Output\All\AllCards1.png",1,9
+;DISPLAY = "Output\All\AllCards2.png",10,18
+;DISPLAY = "Output\All\AllCards3.png",19,27
+;DISPLAY = "Output\All\AllCards4.png",28,36
+;DISPLAY = "Output\All\AllCards5.png",37,45
+;DISPLAY = "Output\All\AllCards6.png",46,54
+;DISPLAY = "Output\All\AllCards7.png",55,63
+;DISPLAY = "Output\All\AllCards8.png",64,72
+;DISPLAY = "Output\All\AllCards9.png",73,81
+;DISPLAY = "Output\All\AllCards10.png",82,90
+;DISPLAY = "Output\All\AllCards11.png",91,99
+;DISPLAY = "Output\All\AllCards12.png",100,108
+;DISPLAY = "Output\All\AllCards13.png",109,117
+;DISPLAY = "Output\All\AllCards14.png",118,126
+
 
 
 
