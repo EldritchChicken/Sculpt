@@ -49,9 +49,9 @@ IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBorderV4.png",{-100/62}%,{
 ;Charges Font
 HTMLFONT=ChargeFont,Verdana,11,,#000000
 ;Charges Text(snap)
-HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],{4000/62}%,{800/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],{4000/62}%,{800/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3300/62}%,{1300/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],{4000/62}%,{1300/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],{4400/62}%,{1350/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3300/62}%,{1300/88}%,{953/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Title Font
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
@@ -135,20 +135,20 @@ HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{200/62}%,[E3TY],{5
 
 ENDVISUAL
 
-;DISPLAY = "Output\All\AllCards1.png",1,9
-;DISPLAY = "Output\All\AllCards2.png",10,18
-;DISPLAY = "Output\All\AllCards3.png",19,27
-;DISPLAY = "Output\All\AllCards4.png",28,36
-;DISPLAY = "Output\All\AllCards5.png",37,45
-;DISPLAY = "Output\All\AllCards6.png",46,54
-;DISPLAY = "Output\All\AllCards7.png",55,63
-;DISPLAY = "Output\All\AllCards8.png",64,72
-;DISPLAY = "Output\All\AllCards9.png",73,81
-;DISPLAY = "Output\All\AllCards10.png",82,90
-;DISPLAY = "Output\All\AllCards11.png",91,99
-;DISPLAY = "Output\All\AllCards12.png",100,108
-;DISPLAY = "Output\All\AllCards13.png",109,117
-;DISPLAY = "Output\All\AllCards14.png",118,126
+DISPLAY = "Output\All\AllCards1.png",1,9
+DISPLAY = "Output\All\AllCards2.png",10,18
+DISPLAY = "Output\All\AllCards3.png",19,27
+DISPLAY = "Output\All\AllCards4.png",28,36
+DISPLAY = "Output\All\AllCards5.png",37,45
+DISPLAY = "Output\All\AllCards6.png",46,54
+DISPLAY = "Output\All\AllCards7.png",55,63
+DISPLAY = "Output\All\AllCards8.png",64,72
+DISPLAY = "Output\All\AllCards9.png",73,81
+DISPLAY = "Output\All\AllCards10.png",82,90
+DISPLAY = "Output\All\AllCards11.png",91,99
+DISPLAY = "Output\All\AllCards12.png",100,108
+DISPLAY = "Output\All\AllCards13.png",109,117
+DISPLAY = "Output\All\AllCards14.png",118,126
 
 
 
