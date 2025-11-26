@@ -3,11 +3,11 @@ CC = 150
 
 ;Import token images
 ;Basic images
-htmlimage= ,FleshT,"Images\Inline\newf.png", .32, .32,PB
-htmlimage= ,JazzT,"Images\Inline\JAZZT.png", .32, .32,PB
-HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png", .32, .32,PB
-HTMLIMAGE= ,compT,"Images\Inline\compT.png", .32, .32,PB
-HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png", .32, .32,PB
+htmlimage= ,FleshT,"Images\Inline\newf.png", .32, .32,PB,,,,,0.09
+htmlimage= ,JazzT,"Images\Inline\JAZZT.png", .32, .32,PB,,,,,0.09
+HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png", .32, .32,PB,,,,,0.09
+HTMLIMAGE= ,compT,"Images\Inline\compT.png", .32, .32,PB,,,,,0.09
+HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png", .32, .32,PB,,,,,0.09
 htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.1, .32,PB
 htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB
@@ -51,7 +51,7 @@ HTMLFONT=ChargeFont,Verdana,11,,#000000
 ;Charges Text(snap)
 HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],{4000/62}%,{1300/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],{4400/62}%,{1350/88}%,{853/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3300/62}%,{1300/88}%,{953/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3150/62}%,{1350/88}%,{1000/24}%,{149/12}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Title Font
 FONT=Book Antiqua,15,T,#000000
 ;Title Text(snap)
