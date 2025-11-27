@@ -9,9 +9,9 @@ HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png", .32, .32,PB,,,,,0.09
 HTMLIMAGE= ,compT,"Images\Inline\compT.png", .32, .32,PB,,,,,0.09
 HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png", .32, .32,PB,,,,,0.09
 htmlimage= ,LineBrk,"Images\Inline\LineBrk.png", 5.1, .32,PB
-htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB
-htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB
-htmlimage= ,ChargeBIG,"Images\Inline\gear.png", .8, .8,P,0,0
+htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB,,,,,0.09
+htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB,,,,0.09
+htmlimage= ,ChargeBIG,"Images\Inline\gear.png", .8, .8,P,0,0,,,0.09
 
 ;Player card images
 htmlimage= ,hornshexes,"Images\Inline\hornshexes.png", 1.8, .8,P,0,0
