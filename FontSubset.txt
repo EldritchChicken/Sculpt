@@ -1,4 +1,4 @@
-LINK= Master1.0.xlsx
+LINK= FontSubset.xlsx
 
 
 ;Import token images
@@ -55,18 +55,18 @@ HTMLFONT= PassiveFont,Verdana,9,,#000000
 HTMLFONT= AttackFont,Verdana,9,,#000000
 HTMLFONT= CritFont,Verdana,9,,#000000
 
-HTMLFONT= ActiveHeaderFont,Verdana,10.5,,#000000
-HTMLFONT= ReactionHeaderFont,Verdana,10.5,,#000000
-HTMLFONT= PassiveHeaderFont,Verdana,10.5,,#000000
-HTMLFONT= AttackHeaderFont,Verdana,10.5,,#000000
-HTMLFONT= CritHeaderFont,Verdana,10.5,,#000000
+HTMLFONT= ActiveHeaderFont,Century Gothic,10.5,,#000000
+HTMLFONT= ReactionHeaderFont,Century Gothic,10.5,,#000000
+HTMLFONT= PassiveHeaderFont,Century Gothic,10.5,,#000000
+HTMLFONT= AttackHeaderFont,Century Gothic,10.5,,#000000
+HTMLFONT= CritHeaderFont,Century Gothic,10.5,,#000000
 
-HTMLFONT= TitleFont,Verdana,15,,#000000,CENTER
-HTMLFONT= TypeFont,Verdana,11,,#000000
+HTMLFONT= TitleFont,Century Gothic,15,,#000000,CENTER
+HTMLFONT= TypeFont,Century Gothic,12,,#000000
 HTMLFONT= ChargeFont,Verdana,11,,#000000
 
 ;Add Title
-HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{200/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
+HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{250/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
 ;Add Type
 HTMLTEXT="1-{(TYPE)}",[TYPE],{330/62}%,{1400/88}%,{32000/800}%,{769/75}%,#FFFFFF,0,TE,100,TypeFont,TypeFont
 ;Add Charges
@@ -127,37 +127,20 @@ HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3 Title],{200/62}%,[E3TY
 HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T,100,ReactionFont, ReactionFont
 
 ;Add Crit Effects
-IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1 Title],{200/62}%,[E1TY],{56157/600}%,5,#FFFFFF,0,T,100,CritHeaderFont,CritHeaderFont
-HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,5,#FFFFFF,0,T,100,CritFont,CritFont
+
 
 IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,5,#FFFFFF,0,T,100,CritHeaderFont,CritHeaderFont
-HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,5,#FFFFFF,0,T,100,CritFont,CritFont
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,4,#FFFFFF,0,T,100,CritHeaderFont,CritHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,4,#FFFFFF,0,T,100,CritFont,CritFont
 
 IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/critTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,5,#FFFFFF,0,T,100,CritHeaderFont,CritHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,5,#FFFFFF,0,T,100,CritFont,CritFont
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,4,#FFFFFF,0,T,100,CritHeaderFont,CritHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,4,#FFFFFF,0,T,100,CritFont,CritFont
 
 ENDVISUAL
 
-DISPLAY = "Output\AllCards1.png",1,9
-DISPLAY = "Output\AllCards2.png",10,18
-DISPLAY = "Output\AllCards3.png",19,27
-DISPLAY = "Output\AllCards4.png",28,36
-DISPLAY = "Output\AllCards5.png",37,45
-DISPLAY = "Output\AllCards6.png",46,54
-DISPLAY = "Output\AllCards7.png",55,63
-DISPLAY = "Output\AllCards8.png",64,72
-DISPLAY = "Output\AllCards9.png",73,81
-DISPLAY = "Output\AllCards10.png",82,90
-DISPLAY = "Output\AllCards11.png",91,99
-DISPLAY = "Output\AllCards12.png",100,108
-DISPLAY = "Output\AllCards13.png",109,117
-DISPLAY = "Output\AllCards14.png",118,126
+DISPLAY = "Output\FontTest\1.png",1,9
 
-
-SAVE=,"Output\Singles\Card_{§Z000}.png"
 
 
 
