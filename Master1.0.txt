@@ -62,7 +62,7 @@ HTMLFONT= CritHeaderFont,Century Gothic,10.5,,#000000
 
 HTMLFONT= TitleFont,Century Gothic,15,,#000000,CENTER
 HTMLFONT= TypeFont,Century Gothic,12,,#000000
-HTMLFONT= ChargeFont,Century Gothic,12,,#000000
+HTMLFONT= ChargeFont,Century Gothic,10.5,,#000000
 
 ;Add Title
 HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{200/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
