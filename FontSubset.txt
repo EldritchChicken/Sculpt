@@ -51,19 +51,19 @@ IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/ImpressionBorderV4.png",
 IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
 
 ;Create Fonts
-HTMLFONT= ActiveFont,Candara,9,,#000000
-HTMLFONT= ReactionFont,Candara,9,,#000000
-HTMLFONT= PassiveFont,Candara,9,,#000000
-HTMLFONT= AttackFont,Candara,9,,#000000
-HTMLFONT= CritFont,Candara,9,,#000000
+HTMLFONT= ActiveFont,Brazilian Clay,11,,#000000
+HTMLFONT= ReactionFont,Brazilian Clay,11,,#000000
+HTMLFONT= PassiveFont,Brazilian Clay,11,,#000000
+HTMLFONT= AttackFont,Brazilian Clay,11,,#000000
+HTMLFONT= CritFont,Brazilian Clay,11,,#000000
 
-HTMLFONT= ActiveHeaderFont,Chalkchalk-Regular,10.5,,#000000
-HTMLFONT= ReactionHeaderFont,Chalkchalk-Regular,10.5,,#000000
-HTMLFONT= PassiveHeaderFont,Chalkchalk-Regular,10.5,,#000000
-HTMLFONT= AttackHeaderFont,Chalkchalk-Regular,10.5,,#000000
-HTMLFONT= CritHeaderFont,Chalkchalk-Regular,10.5,,#000000
+HTMLFONT= ActiveHeaderFont,Verdana,10.5,,#000000
+HTMLFONT= ReactionHeaderFont,Verdana,10.5,,#000000
+HTMLFONT= PassiveHeaderFont,Verdana,10.5,,#000000
+HTMLFONT= AttackHeaderFont,Verdana,10.5,,#000000
+HTMLFONT= CritHeaderFont,Verdana,10.5,,#000000
 
-HTMLFONT= TitleFont,Silent Forest,20,,#000000,CENTER
+HTMLFONT= TitleFont,Verdana,16,,#000000,CENTER
 HTMLFONT= TypeFont,Verdana,12,,#000000
 HTMLFONT= ChargeFont,Verdana,11,,#000000
 
