@@ -1,4 +1,4 @@
-LINK=CardFiles\SculptPrint4Terrain.xlsx
+LINK=Terrain.xlsx
 CC = 150
 
 ;Import token images
@@ -11,16 +11,7 @@ htmlimage= ,ChargeT,"Images\Inline\gear.png", .4, .4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png", .55, .55,PB
 htmlimage= ,ChargeBIG,"Images\Inline\gear.png", .8, .8,P,0,0
 
-;Player card images
-htmlimage= ,hornshexes,"Images\hornshexes.png", 1.8, .8,P,0,0
 
-;Boss images
-htmlimage= ,LargeHexes,"Images\Inline\Threehexes.png", .7, .7,P,0,0
-htmlimage= ,threesmallhexes,"Images\Inline\Threehexes.png", .4, .4,P,0,0
-htmlimage= ,threehexline,"Images\Inline\Threehexline.png", .6, .6,P,0,0
-htmlimage= ,skqu,"Images\Inline\skellyqueen.png", .6, .6,P,0,0
-htmlimage= ,nmls,"Images\Inline\nameless.png", .5, .6,P,0,0
-htmlimage= ,arrowhexes,"Images\Inline\arrowhexes.png", .9, .9,P,0,0
 
 ;Terrain images
 htmlimage= ,CavePaint1,"Images\Inline\CavePaint1.png", 1.324,1.228,PB
@@ -28,7 +19,7 @@ htmlimage= ,CavePaint2,"Images\Inline\CavePaint2.png", 2.372, 0.32, PB
 htmlimage= ,GateHex,"Images\Inline\GateHex.png", 0.8, 0.768, PB
 htmlimage= ,Hex1a,"Images\Inline\Hex1a.png", .32, .32,PM
 htmlimage= ,Hex1b,"Images\Inline\Hex1b.png", 0.538, 0.546, PM
-htmlimage= ,Hex2,"Images\Inline\Hex2.png", 0.8, 0.774, PM
+htmlimage= ,Hex2wide,"Images\Inline\Hex2wide.png", 0.8, 0.774, PM
 htmlimage= ,Hex3,"Images\Inline\Hex3.png", 1.324, 1.226, PM
 htmlimage= ,LOSicon,"Images\Inline\LOSicon.png", 1.068, 0.564, PM
 htmlimage= ,Whiskey_Xplo,"Images\Inline\Whisky_Xplo.png",1.324, 1.226, PB
@@ -38,7 +29,8 @@ htmlimage= ,RiverHex,"Images\Inline\RiverHex.png", 1.6, 1.5, PB
 
 VISUAL=HVPY, 63, 88
 ;Background(snap)(size)
-IMAGE=,"Images\Templates\terraincard.png",0%,0%,{6400/63}%,{8900/88}%
+IMAGE=LABELRANGE([Type],"Boon"),"Images\Templates\boon.png",0%,0%,{6400/63}%,{8900/88}%
+IMAGE=LABELRANGE([Type],"Bane"),"Images\Templates\bane.png",0%,0%,{6400/63}%,{8900/88}%
 ;Font(snap)
 FONT=Arial,16,T,#000000
 ;Title Text(snap)
@@ -48,7 +40,7 @@ HTMLFONT=ChargeFont,Verdana,9,,#000000
 ;HTMLText(snap)
 HTMLTEXT="1-{(TOPRIGHTTEXT)}",[TOPRIGHTTEXT],{4900/63}%,{600/88}%,{6340/333}%,{5691/500}%,#FFFFFF,0,T,100,ChargeFont,ChargeFont
 ;Type Font(snap)
-FONT=Verdana,10,T,#000000,#000000
+FONT=Verdana,12,T,#000000,#000000
 ;Type Text(snap)
 TEXT="1-{(TYPE)}",[TYPE],{-2300/63}%,{1300/88}%,{40720/333}%,{2563/250}%,CENTER
 ;Body Font(snap)
