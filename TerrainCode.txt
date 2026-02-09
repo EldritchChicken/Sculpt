@@ -52,6 +52,7 @@ ENDVISUAL
 DISPLAY = "Output\Terrain1.png",1,9
 DISPLAY = "Output\Terrain2.png",10,18
 DISPLAY = "Output\Terrain3.png",19,27
+DISPLAY = "Output\Terrain3.png",28,36
 
 
 
