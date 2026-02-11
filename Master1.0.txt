@@ -45,7 +45,7 @@ Cardsize = 63, 88
 ;Place Background
 IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/LimbBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
 IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/ImpressionBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
-IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBordernew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%%
 
 ;Create Fonts
 HTMLFONT= ActiveFont,Candara,10,,#000000
@@ -67,7 +67,7 @@ HTMLFONT= ChargeFont,Century Gothic,10.5,,#000000
 ;Add Title
 HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{200/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
 ;Add Type
-HTMLTEXT="1-{(TYPE)}",[TYPE],{330/62}%,{1400/88}%,{32000/800}%,{769/75}%,#FFFFFF,0,TE,100,TypeFont,TypeFont
+HTMLTEXT="1-{(TYPE)}",[TYPE],{330/62}%,{1150/88}%,{32000/800}%,{769/75}%,#FFFFFF,0,TE,100,TypeFont,TypeFont
 ;Add Charges
 HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],{4000/62}%,{1300/88}%,{853/24}%,{149/12}%,#FFFFFF,0,TE,100,ChargeFont,ChargeFont
 HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],{4400/62}%,{1350/88}%,{853/24}%,{149/12}%,#FFFFFF,0,TE,100,ChargeFont,ChargeFont
@@ -75,68 +75,68 @@ HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3150/62}%,{1350/88}%,{1000/24}%,{1
 
 ;Add Actives
 IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
+HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1 Title],{250/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
 HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,ActiveFont,ActiveFont
 
 IMAGE=labelrange([Effect 2 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2 Title],{250/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
 HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,ActiveFont,ActiveFont
 
 IMAGE=labelrange([Effect 3 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,ActiveFont,ActiveFont
+HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3 Title],{250/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],{250/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,ActiveFont,ActiveFont
 
 ;Add Attacks
 IMAGE=LABELRANGE([Effect 1 Type],"Attack"),"Images/Templates/AttackTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,AttackHeaderFont,AttackHeaderFont
-HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
+HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1 Title],{250/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,AttackHeaderFont,AttackHeaderFont
+HTMLTEXT=labelrange([Effect 1 Type],"Attack"),[Effect 1],{250/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
 
 IMAGE=labelrange([Effect 2 Type],"Attack"),"Images/Templates/AttackTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,AttackHeaderFont,AttackHeaderFont
-HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
+HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2 Title],{250/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,AttackHeaderFont,AttackHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Attack"),[Effect 2],{250/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
 
 IMAGE=labelrange([Effect 3 Type],"Attack"),"Images/Templates/AttackTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,AttackHeaderFont,AttackHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
+HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3 Title],{250/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,AttackHeaderFont,AttackHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3],{250/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
 
 ;Add Passives
 IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
-HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
+HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1 Title],{250/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
+HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1],{250/62}%,[E1Y],{55000/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
 
 IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
-HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
+HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2 Title],{250/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Passive"),[Effect 2],{250/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
 
 IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
+HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3 Title],{250/62}%,[E3TY],{55000/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Passive"),[Effect 3],{250/62}%,[E3Y],{55000/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
 
 ;Add Reactions
 IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1 Title],{200/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,ReactionHeaderFont,ReactionHeaderFont
-HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,ReactionFont, ReactionFont
+HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1 Title],{250/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,ReactionHeaderFont,ReactionHeaderFont
+HTMLTEXT=labelrange([Effect 1 Type],"Reaction"),[Effect 1],{250/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,ReactionFont, ReactionFont
 
 IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,ReactionHeaderFont,ReactionHeaderFont
-HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,ReactionFont, ReactionFont
+HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2 Title],{250/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,ReactionHeaderFont,ReactionHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Reaction"),[Effect 2],{250/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,ReactionFont, ReactionFont
 
 IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/ReactionTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,ReactionHeaderFont,ReactionHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,ReactionFont, ReactionFont
+HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3 Title],{250/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,ReactionHeaderFont,ReactionHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Reaction"),[Effect 3],{250/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,ReactionFont, ReactionFont
 
 ;Add Crit Effects
 IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1 Title],{200/62}%,[E1TY],{56157/600}%,50,#FFFFFF,0,TE,100,CritHeaderFont,CritHeaderFont
-HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
+HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1 Title],{250/62}%,[E1TY],{56157/600}%,50,#FFFFFF,0,TE,100,CritHeaderFont,CritHeaderFont
+HTMLTEXT=labelrange([Effect 1 Type],"Crit"),[Effect 1],{250/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
 
 IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/CritTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2 Title],{200/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,CritHeaderFont,CritHeaderFont
-HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2 Title],{250/62}%,[E2TY],{55000/600}%,50,#FFFFFF,0,TE,100,CritHeaderFont,CritHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{250/62}%,[E2Y],{55000/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
 
 IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/critTest.png",{100/50}%,[E3BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{200/62}%,[E3TY],{56107/600}%,50,#FFFFFF,0,TE,100,CritHeaderFont,CritHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{200/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3 Title],{250/62}%,[E3TY],{55000/600}%,50,#FFFFFF,0,TE,100,CritHeaderFont,CritHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{250/62}%,[E3Y],{55000/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
 
 ;Old print code
 
