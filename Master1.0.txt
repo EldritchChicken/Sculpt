@@ -2,11 +2,11 @@ LINK= Master1.0.xlsx
 
 ;Import token images
 ;Basic images
-htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,PB,,,,,0.05
-htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,compT,"Images\Inline\compT.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png",3.2,3.2,PB,,,,,0.05
+htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,PB,,,,,0.5
+htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,PB,,,,,0.5
+HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,PB,,,,,0.5
+HTMLIMAGE= ,compT,"Images\Inline\compT.png",3.2,3.2,PB,,,,,0.5
+HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png",3.2,3.2,PB,,,,,0.5
 htmlimage= ,LineBrk,"Images\Inline\LineBrk.png",51,3.2,PB
 htmlimage= ,ChargeT,"Images\Inline\gear.png",4,4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png",5.5,5.5, PB
