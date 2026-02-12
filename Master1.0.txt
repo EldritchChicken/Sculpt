@@ -2,11 +2,11 @@ LINK= Master1.0.xlsx
 
 ;Import token images
 ;Basic images
-htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,PB,,,,,0.5
-htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,PB,,,,,0.5
-HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,PB,,,,,0.5
-HTMLIMAGE= ,compT,"Images\Inline\compT.png",3.2,3.2,PB,,,,,0.5
-HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png",3.2,3.2,PB,,,,,0.5
+htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,PB,,,,,0.05
+htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,PB,,,,,0.05
+HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,PB,,,,,0.05
+HTMLIMAGE= ,compT,"Images\Inline\compT.png",3.2,3.2,PB,,,,,0.05
+HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png",3.2,3.2,PB,,,,,0.05
 htmlimage= ,LineBrk,"Images\Inline\LineBrk.png",51,3.2,PB
 htmlimage= ,ChargeT,"Images\Inline\gear.png",4,4,PB
 htmlimage= ,ChargeMID,"Images\Inline\gear.png",5.5,5.5, PB
@@ -43,8 +43,8 @@ Unit = mm
 Cardsize = 63, 88
 
 ;Place Background
-IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/LimbBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
-IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/ImpressionBorderV4.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/FormBordernew.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
+IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/FormBordernew.png",{-100/62}%,{-100/88}%,{6400/62}%,{9000/88}%
 IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/FormBordernew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%%
 
 ;Create Fonts
@@ -74,11 +74,11 @@ HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],{4400/62}%,{1350/88}%,{853/24
 HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],{3150/62}%,{1350/88}%,{1000/24}%,{149/12}%,#FFFFFF,0,TE,100,ChargeFont,ChargeFont
 
 ;Add Actives
-IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Templates/ActiveTest.png",{80/50}%,[E1BY],{9600/100}%,{750/100}%
 HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1 Title],{250/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
 HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1],{200/62}%,[E1Y],{56157/600}%,50,#FFFFFF,0,TE,100,ActiveFont,ActiveFont
 
-IMAGE=labelrange([Effect 2 Type],"Active"),"Images/Templates/ActiveTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
+IMAGE=labelrange([Effect 2 Type],"Active"),"Images/Templates/ActiveTest.png",{150/50}%,[E2BY],{9380/100}%,{750/100}%
 HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2 Title],{250/62}%,[E2TY],{56107/600}%,50,#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
 HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2],{200/62}%,[E2Y],{56157/600}%,50,#FFFFFF,0,TE,100,ActiveFont,ActiveFont
 
@@ -100,8 +100,8 @@ HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3 Title],{250/62}%,[E3TY],
 HTMLTEXT=labelrange([Effect 3 Type],"Attack"),[Effect 3],{250/62}%,[E3Y],{56157/600}%,50,#FFFFFF,0,TE,100,AttackFont,AttackFont
 
 ;Add Passives
-IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E1BY],{9600/100}%,{750/100}%
-HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1 Title],{250/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
+IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/PassiveTest.png",{150/50}%,[E1BY],{9400/100}%,{750/100}%
+HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1 Title],{520/62}%,[E1TY],{56107/600}%,50,#FFFFFF,0,TE,100,PassiveHeaderFont,PassiveHeaderFont
 HTMLTEXT=labelrange([Effect 1 Type],"Passive"),[Effect 1],{250/62}%,[E1Y],{55000/600}%,50,#FFFFFF,0,TE,100,PassiveFont,PassiveFont
 
 IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/PassiveTest.png",{100/50}%,[E2BY],{9600/100}%,{750/100}%
