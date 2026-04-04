@@ -73,7 +73,7 @@ HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],3,[E3Y],57,50,#FFFFFF,0
 ;Background(snap)(size)
 IMAGE=,"Images/Terrain/TerrainBoarder.png",0,0,63,88
 
-;SAVE=,"Output\Singles\Terrain\Card_{§Z000}.png"
+SAVE=,"Output\Singles\Terrain\Card_{§Z000}.png"
 
 
 
