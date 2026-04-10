@@ -51,27 +51,27 @@ HTMLFONT= ChargeFont,Century Gothic,10.5,,#000000
 IMAGE = "1-{(NAME)}","Images/Templates/paper.jpg",0,0,63,88
 
 ;Add Ability Header Boxes
-IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Templates/headtest.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Active"),"Images/Templates/headtest.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Active"),"Images/Templates/headtest.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Attack"),"Images/Templates/redhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Attack"),"Images/Templates/redhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Attack"),"Images/Templates/.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Templates/Headers/headtest.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Active"),"Images/Templates/Headers/headtest.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Active"),"Images/Templates/Headers/headtest.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Attack"),"Images/Templates/Headers/redhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Attack"),"Images/Templates/Headers/redhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Attack"),"Images/Templates/Headers/redhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
 
 
 ;Place Background
-IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/newlimbnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
-IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/newimpnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
-IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/newformnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
+IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/Borders/newlimbnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
+IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/Borders/newimpnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
+IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/Borders/newformnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
 
 ;Add Title
 HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{300/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
