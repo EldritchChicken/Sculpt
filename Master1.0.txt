@@ -1,6 +1,9 @@
 LINK= TestSet.xlsx
 
+;-------------------------------------
 ;Import token images
+;-------------------------------------
+
 ;Basic images
 htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,P
 htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,P
@@ -24,11 +27,9 @@ htmlimage= ,Hex2,"Images\Inline\Hex2.png",8,7.7, PM
 htmlimage= ,Hex3,"Images\Inline\Hex3.png",13.2,12.3,PM
 htmlimage= ,Whiskey_Xplo,"Images\Inline\whisky_xplo.png",11,11,PM,0,0
 
-
-;Define core size/dpi
-dpi = 300
-Unit = mm
-Cardsize = 63, 88
+;--------------------------------------
+;Establish Variables
+;--------------------------------------
 
 ;Create Fonts
 HTMLFONT= ActiveFont,Candara,10,,#000000
@@ -46,6 +47,13 @@ HTMLFONT= CritHeaderFont,Century Gothic,10.5,,#000000
 HTMLFONT= TitleFont,Century Gothic,15,,#000000,CENTER
 HTMLFONT= TypeFont,Century Gothic,12,,#000000
 HTMLFONT= ChargeFont,Century Gothic,10.5,,#000000
+
+;--------------------------------------
+
+;Define core size/dpi
+dpi = 300
+Unit = mm
+Cardsize = 63, 88
 
 ;add paper background
 IMAGE = "1-{(NAME)}","Images/Templates/paper.jpg",0,0,63,88
@@ -66,7 +74,6 @@ IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/Headers/newhead.p
 IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
 IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
 IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-
 
 ;Place Background
 IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/Borders/newlimbnew.png",{-250/62}%,{-150/88}%,{6810/62}%,{10300/88}%
@@ -119,7 +126,7 @@ HTMLTEXT=labelrange([Effect 2 Type],"Crit"),[Effect 2],{250/62}%,[E2Y],{55000/60
 HTMLTEXT=labelrange([Effect 3 Type],"Crit"),[Effect 3],{250/62}%,[E3Y],{55000/600}%,50,#FFFFFF,0,TE,100,CritFont,CritFont
 
 
-SAVE=,"Output\Singles\Card_{§Z000}.png"
+;SAVE=,"Output\Singles\Card_{§Z000}.png"
 
 
 
