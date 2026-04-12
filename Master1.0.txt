@@ -1,12 +1,12 @@
-LINK= TestSet.xlsx
+LINK= Master1.0.xlsx
 
 ;Import token images
 ;Basic images
 htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,P
 htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,P
 HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,P
-HTMLIMAGE= ,compT,"Images\Inline\compT.png",3.2,3.2,P
-HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png",3.2,3.2,P
+HTMLIMAGE= ,compT,"Images\Inline\composure.png",3.2,3.2,P
+HTMLIMAGE= ,tempcT,"Images\Inline\tempc.png",3.2,3.2,P
 htmlimage= ,LineBrk,"Images\Inline\LineBrk.png",51,3.2,P
 htmlimage= ,ChargeT,"Images\Inline\gear2.png",3.2,3.2,P
 htmlimage= ,ChargeMID,"Images\Inline\gear2.png",5.5,5.5, P
@@ -57,15 +57,15 @@ IMAGE=labelrange([Effect 3 Type],"Active"),"Images/Templates/Headers/headtest.pn
 IMAGE=LABELRANGE([Effect 1 Type],"Attack"),"Images/Templates/Headers/redhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
 IMAGE=labelrange([Effect 2 Type],"Attack"),"Images/Templates/Headers/redhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
 IMAGE=labelrange([Effect 3 Type],"Attack"),"Images/Templates/Headers/redhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
-IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
-IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/Headers/newhead.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Passive"),"Images/Templates/Headers/headtest.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Passive"),"Images/Templates/Headers/headtest.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Passive"),"Images/Templates/Headers/headtest.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Reaction"),"Images/Templates/Headers/headtest.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Reaction"),"Images/Templates/Headers/headtest.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Reaction"),"Images/Templates/Headers/headtest.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
+IMAGE=LABELRANGE([Effect 1 Type],"Crit"),"Images/Templates/Headers/headtest.png",{55/50}%,[E1BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 2 Type],"Crit"),"Images/Templates/Headers/headtest.png",{55/50}%,[E2BY],{9850/100}%,{800/100}%
+IMAGE=labelrange([Effect 3 Type],"Crit"),"Images/Templates/Headers/headtest.png",{55/50}%,[E3BY],{9850/100}%,{800/100}%
 
 
 ;Place Background
