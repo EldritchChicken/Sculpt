@@ -24,29 +24,28 @@ htmlimage= ,Hex2wide,"Images\Inline\Hex2wide.png",5.4,3.2,PM
 htmlimage= ,Hex1b,"Images\Inline\Hex1b.png",5.4,5.5,PM
 htmlimage= ,Hex2,"Images\Inline\Hex2.png",8,7.7, PM
 htmlimage= ,Hex3,"Images\Inline\Hex3.png",13.2,12.3,PM
-htmlimage= ,Whiskey_Xplo,"Images\Inline\whisky_xplo.png",11,11,PM,0,0
 
 ;--------------------------------------
 ;Create Fonts
 ;--------------------------------------
 ;Card Top Fonts
-HTMLFONT= TitleFont,Century Gothic,15,,#000000,CENTER
-HTMLFONT= TypeFont,Century Gothic,12,,#000000
-HTMLFONT= ChargeFont,Century Gothic,10.5,,#000000
+HTMLFONT=TitleFont,Century Gothic,15,,#000000,CENTER
+HTMLFONT=TypeFont,Century Gothic,12,,#000000
+HTMLFONT=ChargeFont,Century Gothic,10.5,,#000000
 
 ;Header Fonts
-HTMLFONT= ActiveBannerFont,Century Gothic,10.5,,#000000
-HTMLFONT= ReactionBannerFont,Century Gothic,10.5,,#000000
-HTMLFONT= PassiveBannerFont,Century Gothic,10.5,,#000000
-HTMLFONT= AttackBannerFont,Century Gothic,10.5,,#000000
-HTMLFONT= CritBannerFont,Century Gothic,10.5,,#000000
+HTMLFONT=BannerActiveFont,Century Gothic,10.5,,#000000
+HTMLFONT=BannerReactionFont,Century Gothic,10.5,,#000000
+HTMLFONT=BannerPassiveFont,Century Gothic,10.5,,#000000
+HTMLFONT=BannerAttackFont,Century Gothic,10.5,,#000000
+HTMLFONT=BannerCritFont,Century Gothic,10.5,,#000000
 
 ;Body Fonts
-HTMLFONT= ActiveFont,Candara,10,,#000000
-HTMLFONT= ReactionFont,Candara,10,,#000000
-HTMLFONT= PassiveFont,Candara,10,,#000000
-HTMLFONT= AttackFont,Candara,10,,#000000
-HTMLFONT= CritFont,Candara,10,,#000000
+HTMLFONT=AbillityActiveFont,Candara,10,,#000000
+HTMLFONT=AbillityReactionFont,Candara,10,,#000000
+HTMLFONT=AbillityPassiveFont,Candara,10,,#000000
+HTMLFONT=AbillityAttackFont,Candara,10,,#000000
+HTMLFONT=AbillityCritFont,Candara,10,,#000000
 
 ;--------------------------------------
 ;Define core size/dpi
@@ -59,20 +58,20 @@ Cardsize = 63, 88
 ;Create Card
 ;--------------------------------------
 ;Add Paper background
-IMAGE=1-{(NAME)},"Images/Templates/paper.jpg",0,0,63,68
+IMAGE=1-{(NAME)},"Images/Templates/paper.jpg",0,0,63,88
 
 ;Add Banner Images
-[ActiveBanner]="Images/Templates/Banners/ActiveBanner.png"
-[AttackBanner]="Images/Templates/Banners/AttackBanner.png"
-[PassiveBanner]="Images/Templates/Banners/PassiveBanner.png"
-[ReactionBanner]="Images/Templates/Banners/ReactionBanner.png"
-[CritBanner]="Images/Templates/Banners/CritBanner.png"
-[PosXBannerImage]=1.5
-[WidthBannerImage]={9850/100}%
-[HeightBannerImage]={800/100}%
-IMAGE=1-{(NAME)},[Effect 1 Type]Banner,[PosXBannerImage],[E1BY],[WidthBannerImage],[HeightBannerImage]
-IMAGE=1-{(NAME)},[Effect 2 Type]Banner,[PosXBannerImage],[E2BY],[WidthBannerImage],[HeightBannerImage]
-IMAGE=1-{(NAME)},[Effect 3 Type]Banner,[PosXBannerImage],[E3BY],[WidthBannerImage],[HeightBannerImage]
+[ActiveBanner]="Images/Templates/Banners/BannerActive.png"
+[AttackBanner]="Images/Templates/Banners/BannerAttack.png"
+[PassiveBanner]="Images/Templates/Banners/BannerPassive.png"
+[ReactionBanner]="Images/Templates/Banners/BannerReaction.png"
+[CritBanner]="Images/Templates/Banners/BannerCrit.png"
+[PosXBannerImage]=0
+[WidthBannerImage]=63
+[HeightBannerImage]=7
+IMAGE=1-{(NAME)},[[Effect 1 Type]Banner],[PosXBannerImage],[E1BY],[WidthBannerImage],[HeightBannerImage]
+IMAGE=1-{(NAME)},[[Effect 2 Type]Banner],[PosXBannerImage],[E2BY],[WidthBannerImage],[HeightBannerImage]
+IMAGE=1-{(NAME)},[[Effect 3 Type]Banner],[PosXBannerImage],[E3BY],[WidthBannerImage],[HeightBannerImage]
 
 ;Add Card Border
 [PosXBorder]=0
@@ -81,40 +80,40 @@ IMAGE=1-{(NAME)},[Effect 3 Type]Banner,[PosXBannerImage],[E3BY],[WidthBannerImag
 [HeightBorder]=88
 IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/Borders/LimbBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/Borders/ImpressionBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
-IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/Borders/ImpressionBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/Borders/FormBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 
 ;Add Title Text
-HTMLTEXT=1-{(NAME)},[NAME],{320/62}%,{300/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
+HTMLTEXT=1-{(NAME)},[NAME],3,3,57,6,#FFFFFF,0,TE,100,TitleFont
 
 ;Add Type Text
-HTMLTEXT=1-{(NAME)},[TYPE],{380/62}%,{1270/88}%,{32000/800}%,{769/75}%,#FFFFFF,0,TE,100,TypeFont,TypeFont
+HTMLTEXT=1-{(NAME)},[TYPE],3,11.5,31,6,#FFFFFF,0,TE,100,TypeFont
 
 ;Add Charges
-[PosXChargesLimb]={3450/62}%
-[PosXChargesImpression]={4200/62}%
-[PosXChargesForm]={3450/62}%
-[PosYCharges]={1270/88}%
-[WidthCharges]={1000/24}%
-[HeightCharges]={139/12}%
-HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],[PosXChargesLimb],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],[PosXChargesImpression],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],[PosXChargesForm],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont,ChargeFont
+[PosXChargesLimb]=35
+[PosXChargesImpression]=42
+[PosXChargesForm]=35
+[PosYCharges]=11.5
+[WidthCharges]=26
+[HeightCharges]=10
+HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],[PosXChargesLimb],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],[PosXChargesImpression],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],[PosXChargesForm],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
 
 ;Add Banner Text
-[PosXBannerText]={260/62}%
-[WidthBannerText]={56000/600}%
-[HeightBannerText]=50
-HTMLTEXT=1-{(NAME)},[Effect 1 Title],[PosXBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,[Effect 1 Type]BannerFont,[Effect 1 Type]BannerFont
-HTMLTEXT=1-{(NAME)},[Effect 2 Title],[PosXBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,[Effect 2 Type]BannerFont,[Effect 2 Type]BannerFont
-HTMLTEXT=1-{(NAME)},[Effect 3 Title],[PosXBannerText],[E3TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,[Effect 3 Type]BannerFont,[Effect 3 Type]BannerFont
+[PosXBannerText]=3
+[WidthBannerText]=57
+[HeightBannerText]=10
+HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1 Title],[PosXBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,Banner[Effect 1 Type]Font,
+HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2 Title],[PosXBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,Banner[Effect 2 Type]Font,
+HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3 Title],[PosXBannerText],[E3TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,Banner[Effect 3 Type]Font,
 
 ;Add Ability Text
-[PosXAbillity]={250/62}%
-[WidthAbillity]={55700/600}%
+[PosXAbillity]=3
+[WidthAbillity]=57
 [HeightAbillity]=50
-HTMLTEXT=1-{(NAME)},[Effect 1],[PosXAbillity],[E1Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,[Effect 1 Type]AbillityFont,[Effect 1 Type]AbillityFont
-HTMLTEXT=1-{(NAME)},[Effect 2],[PosXAbillity],[E2Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,[Effect 2 Type]AbillityFont,[Effect 2 Type]AbillityFont
-HTMLTEXT=1-{(NAME)},[Effect 3],[PosXAbillity],[E3Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,[Effect 3 Type]AbillityFont,[Effect 3 Type]AbillityFont
+HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1],[PosXAbillity],[E1Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,Abillity[Effect 1 Type]Font,
+HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2],[PosXAbillity],[E2Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,Abillity[Effect 2 Type]Font,
+HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,Abillity[Effect 3 Type]Font,
 
 ;--------------------------------------
 ;Export Singles (redundant)

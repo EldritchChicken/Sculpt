@@ -1,0 +1,18 @@
+LINK= VariableTest.xlsx
+
+;--------------------------------------
+;Define core size/dpi
+;--------------------------------------
+dpi = 300
+Unit = mm
+Cardsize = 63, 88
+
+;--------------------------------------
+;Create Card
+;--------------------------------------
+;Add Paper background
+[TestImage]="Images/Templates/paper.jpg"
+HTMLFONT=ActiveBannerFont,Candara,10,,#0FF000
+IMAGE=1,[[Variable]Image],0,0,63,88
+HTMLTEXT=,[Body],0,0,63,88,#FFFFFF,0,TE,100,[Effect 1 Type]BannerFont
+
