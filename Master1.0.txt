@@ -4,13 +4,12 @@ LINK= Master1.0.xlsx
 ;Import token images
 ;-------------------------------------
 ;Basic images
-htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,P
-htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,P
-HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,P
+htmlimage= ,FleshT,"Images\Inline\tokenH.png",3.2,3.2,P
+htmlimage= ,JazzT,"Images\Inline\tokenJ.png",3.2,3.2,P
+HTMLIMAGE= ,WeirdT,"Images\Inline\tokenw.png",3.2,3.2,P
 HTMLIMAGE= ,multtok,"Images\Inline\multitoken.png",3.2,3.2,P
-HTMLIMAGE= ,CompT,"Images\Inline\compT.png",3.2,3.2,P
-HTMLIMAGE= ,TempcT,"Images\Inline\tempcT.png",3.2,3.2,P
-htmlimage= ,LineBrk,"Images\Inline\LineBrk.png",51,3.2,P
+HTMLIMAGE= ,CompT,"Images\Inline\tokenc.png",3.2,3.2,P
+HTMLIMAGE= ,TempcT,"Images\Inline\tokenct.png",3.2,3.2,P
 htmlimage= ,ChargeT,"Images\Inline\gear2.png",3.2,3.2,P
 htmlimage= ,ChargeMID,"Images\Inline\gear2.png",5.5,5.5, P
 htmlimage= ,ChargeBIG,"Images\Inline\gear2.png",6,6,P,0,0
