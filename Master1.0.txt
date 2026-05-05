@@ -29,28 +29,28 @@ htmlimage= ,Hex3,"Images\Inline\Hex3.png",13.2,12.3,PM
 ;Create Fonts
 ;--------------------------------------
 ;Card Top Fonts
-HTMLFONT=TitleFont,Century Gothic,15,,#000000,CENTER
-HTMLFONT=TypeFont,Century Gothic,12,,#000000
-HTMLFONT=ChargeFont,Century Gothic,10.5,,#000000
+HTMLFONT=TitleFont,Duralith,15,,#000000,CENTER
+HTMLFONT=TypeFont,Duralith,12,,#000000
+HTMLFONT=ChargeFont,Duralith,10.5,,#000000
 
 ;Header Fonts
-HTMLFONT=BannerActiveFont,Century Gothic,10.5,,#000000
-HTMLFONT=BannerReactionFont,Century Gothic,10.5,,#000000
-HTMLFONT=BannerPassiveFont,Century Gothic,10.5,,#000000
-HTMLFONT=BannerAttackFont,Century Gothic,10.5,,#000000
-HTMLFONT=BannerCritFont,Century Gothic,10.5,,#000000
+HTMLFONT=BannerActiveFont,Carlito,10.5,,#000000
+HTMLFONT=BannerReactionFont,Carlito,10.5,,#000000
+HTMLFONT=BannerPassiveFont,Carlito,10.5,,#000000
+HTMLFONT=BannerAttackFont,Carlito,10.5,,#000000
+HTMLFONT=BannerCritFont,Carlito,10.5,,#000000
 
 ;Body Fonts
-HTMLFONT=AbillityActiveFont,Candara,10,,#000000
-HTMLFONT=AbillityReactionFont,Candara,10,,#000000
-HTMLFONT=AbillityPassiveFont,Candara,10,,#000000
-HTMLFONT=AbillityAttackFont,Candara,10,,#000000
-HTMLFONT=AbillityCritFont,Candara,10,,#000000
+HTMLFONT=AbillityActiveFont,Ubuntu Light,10,,#000000
+HTMLFONT=AbillityReactionFont,Ubuntu Light,10,,#000000
+HTMLFONT=AbillityPassiveFont,Ubuntu Light,10,,#000000
+HTMLFONT=AbillityAttackFont,Ubuntu Light,10,,#000000
+HTMLFONT=AbillityCritFont,Ubuntu Light,10,,#000000
 
 ;--------------------------------------
 ;Define core size/dpi
 ;--------------------------------------
-dpi = 300
+dpi = 1200
 Unit = mm
 Cardsize = 63, 88
 
@@ -83,10 +83,10 @@ IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/Borders/ImpressionBorder
 IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/Borders/FormBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 
 ;Add Title Text
-HTMLTEXT=1-{(NAME)},[NAME],3,3,57,6,#FFFFFF,0,TE,100,TitleFont
+HTMLTEXT=1-{(NAME)},[NAME],3,3,57,6,#FFFFFF,0,BE,100,TitleFont
 
 ;Add Type Text
-HTMLTEXT=1-{(NAME)},[TYPE],3,11,31,6,#FFFFFF,0,TE,100,TypeFont
+HTMLTEXT=1-{(NAME)},[TYPE],3,11,31,6,#FFFFFF,0,BE,100,TypeFont
 
 ;Add Charges
 [PosXChargesLimb]=35
@@ -95,25 +95,25 @@ HTMLTEXT=1-{(NAME)},[TYPE],3,11,31,6,#FFFFFF,0,TE,100,TypeFont
 [PosYCharges]=11.5
 [WidthCharges]=26
 [HeightCharges]=10
-HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],[PosXChargesLimb],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],[PosXChargesLimb],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
 HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],[PosXChargesImpression],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],[PosXChargesForm],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],[PosXChargesForm],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
 
 ;Add Banner Text
 [PosXBannerText]=3
 [WidthBannerText]=57
 [HeightBannerText]=10
-HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1 Title],[PosXBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,Banner[Effect 1 Type]Font
-HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2 Title],[PosXBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,Banner[Effect 2 Type]Font
-HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3 Title],[PosXBannerText],[E3TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,Banner[Effect 3 Type]Font
+HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1 Title],[PosXBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,BE,100,Banner[Effect 1 Type]Font
+HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2 Title],[PosXBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,BE,100,Banner[Effect 2 Type]Font
+HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3 Title],[PosXBannerText],[E3TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,BE,100,Banner[Effect 3 Type]Font
 
 ;Add Ability Text
 [PosXAbillity]=3
 [WidthAbillity]=57
 [HeightAbillity]=50
-HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1],[PosXAbillity],[E1Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,Abillity[Effect 1 Type]Font
-HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2],[PosXAbillity],[E2Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,Abillity[Effect 2 Type]Font
-HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,TE,100,Abillity[Effect 3 Type]Font
+HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1],[PosXAbillity],[E1Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BE,100,Abillity[Effect 1 Type]Font
+HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2],[PosXAbillity],[E2Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BE,100,Abillity[Effect 2 Type]Font
+HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BE,100,Abillity[Effect 3 Type]Font
 
 ;--------------------------------------
 ;Export Singles (redundant)
