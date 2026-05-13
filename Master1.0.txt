@@ -96,7 +96,7 @@ HTMLTEXT=1-{(NAME)},[TYPE],3,11,31,6,#FFFFFF,0,BE,100,TypeFont
 [WidthCharges]=26
 [HeightCharges]=10
 HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],[PosXChargesLimb],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
-HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],[PosXChargesImpression],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,TE,100,ChargeFont
+HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],[PosXChargesImpression],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
 HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],[PosXChargesForm],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
 
 ;Add Banner Text
