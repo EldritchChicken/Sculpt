@@ -10,9 +10,9 @@ HTMLIMAGE= ,WeirdT,"Images\Inline\tokenw.png",3.2,3.2,P
 HTMLIMAGE= ,multtok,"Images\Inline\multitoken.png",3.2,3.2,P
 HTMLIMAGE= ,CompT,"Images\Inline\tokenc.png",3.2,3.2,P
 HTMLIMAGE= ,TempcT,"Images\Inline\tokenct.png",3.2,3.2,P
-htmlimage= ,ChargeT,"Images\Inline\gear2.png",3.2,3.2,P
-htmlimage= ,ChargeMID,"Images\Inline\gear2.png",5.5,5.5, P
-htmlimage= ,ChargeBIG,"Images\Inline\gear2.png",6,6,P,0,0
+htmlimage= ,ChargeT,"Images\Inline\chargeT2.png",3.2,3.2,P
+htmlimage= ,ChargeMID,"Images\Inline\chargeT2.png",5.5,5.5, P
+htmlimage= ,ChargeBIG,"Images\Inline\chargeT2.png",6,6,P,0,0
 
 ;Player card images
 htmlimage= ,hornshexes,"Images\Inline\hornshexes.png",18,8,P,0,0
@@ -34,11 +34,11 @@ HTMLFONT=TypeFont,Duralith,12,,#000000
 HTMLFONT=ChargeFont,Duralith,10.5,,#000000
 
 ;Header Fonts
-HTMLFONT=BannerActiveFont,Carlito,10.5,,#000000
-HTMLFONT=BannerReactionFont,Carlito,10.5,,#000000
-HTMLFONT=BannerPassiveFont,Carlito,10.5,,#000000
-HTMLFONT=BannerAttackFont,Carlito,10.5,,#000000
-HTMLFONT=BannerCritFont,Carlito,10.5,,#000000
+HTMLFONT=BannerActiveFont,Ubuntu Light,10.5,,#000000
+HTMLFONT=BannerReactionFont,Ubuntu Light,10.5,,#000000
+HTMLFONT=BannerPassiveFont,Ubuntu Light,10.5,,#000000
+HTMLFONT=BannerAttackFont,Ubuntu Light,10.5,,#000000
+HTMLFONT=BannerCritFont,Ubuntu Light,10.5,,#000000
 
 ;Body Fonts
 HTMLFONT=AbillityActiveFont,Ubuntu Light,10,,#000000
@@ -50,7 +50,7 @@ HTMLFONT=AbillityCritFont,Ubuntu Light,10,,#000000
 ;--------------------------------------
 ;Define core size/dpi
 ;--------------------------------------
-dpi = 1200
+dpi = 300
 Unit = mm
 Cardsize = 63, 88
 
@@ -83,7 +83,7 @@ IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/Borders/ImpressionBorder
 IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/Borders/FormBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 
 ;Add Title Text
-HTMLTEXT=1-{(NAME)},[NAME],3,3,57,6,#FFFFFF,0,BE,100,TitleFont
+HTMLTEXT=1-{(NAME)},[NAME],3,2.6,57,7,#FFFFFF,0,BE,100,TitleFont
 
 ;Add Type Text
 HTMLTEXT=1-{(NAME)},[TYPE],3,11,31,6,#FFFFFF,0,BE,100,TypeFont
