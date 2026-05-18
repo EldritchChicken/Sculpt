@@ -1,0 +1,20 @@
+
+;--------------------------------------
+;Define core size/dpi
+;--------------------------------------
+dpi = 600
+Unit = mm
+Cardsize = 63, 88
+;--------------------------------------
+;Create CardBacks
+;--------------------------------------
+
+;Add Card Border
+[PosXBorder]=0
+[PosYBorder]=0
+[WidthBorder]=63
+[HeightBorder]=88
+IMAGE= 1-9, "Images/Backs/Form.jpg",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+;IMAGE= 10-18,"Images/Backs/Impression.jpg",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+;IMAGE= 19-27,"Images/Backs/Form.jpg",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+
