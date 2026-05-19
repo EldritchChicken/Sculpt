@@ -34,11 +34,11 @@ HTMLFONT=TypeFont,Duralith,12,,#000000
 HTMLFONT=ChargeFont,Duralith,10.5,,#000000
 
 ;Header Fonts
-HTMLFONT=BannerActiveFont,Duralith,10.5,,#000000
-HTMLFONT=BannerReactionFont,Duralith,10.5,,#000000
-HTMLFONT=BannerPassiveFont,Duralith,10.5,,#000000
-HTMLFONT=BannerAttackFont,Duralith,10.5,,#000000
-HTMLFONT=BannerCritFont,Duralith,10.5,,#000000
+HTMLFONT=BannerActiveFont,Ubuntu,10.5,,#000000
+HTMLFONT=BannerReactionFont,Ubuntu,10.5,,#000000
+HTMLFONT=BannerPassiveFont,Ubuntu,10.5,,#000000
+HTMLFONT=BannerAttackFont,Ubuntu,10.5,,#000000
+HTMLFONT=BannerCritFont,Ubuntu,10.5,,#000000
 
 ;Body Fonts
 HTMLFONT=AbillityActiveFont,Ubuntu Light,10,,#000000
@@ -118,4 +118,4 @@ HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[Widt
 ;--------------------------------------
 ;Export Singles (redundant)
 ;--------------------------------------
-;SAVE=,"Output\Singles\Card_{§Z000}.png"
+SAVE=,"Output\Singles\Card_{§Z000}.png"
