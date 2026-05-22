@@ -1,16 +1,14 @@
 LINK= Terrain.xlsx
 
+;-------------------------------------
 ;Import token images
+;-------------------------------------
 ;Basic images
-htmlimage= ,FleshT,"Images\Inline\newf.png",3.2,3.2,PB,,,,,0.05
-htmlimage= ,JazzT,"Images\Inline\JAZZT.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,WeirdT,"Images\Inline\WeirdT.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,compT,"Images\Inline\compT.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,tempcT,"Images\Inline\tempcT.png",3.2,3.2,PB,,,,,0.05
-htmlimage= ,LineBrk,"Images\Inline\LineBrk.png",51,3.2,PB
-htmlimage= ,ChargeT,"Images\Inline\gear.png",4,4,PB
-htmlimage= ,ChargeMID,"Images\Inline\gear.png",5.5,5.5, PB
-htmlimage= ,ChargeBIG,"Images\Inline\gear.png",8,8,P,0,0
+htmlimage= ,FleshT,"Images\Inline\TokenH.png",3.2,3.2,PB,,,,,0.05
+htmlimage= ,JazzT,"Images\Inline\TokenJ.png",3.2,3.2,PB,,,,,0.05
+HTMLIMAGE= ,WeirdT,"Images\Inline\TokenW.png",3.2,3.2,PB,,,,,0.05
+HTMLIMAGE= ,compT,"Images\Inline\TokenC.png",3.2,3.2,PB,,,,,0.05
+HTMLIMAGE= ,tempcT,"Images\Inline\TokenCT.png",3.2,3.2,PB,,,,,0.05
 
 ;Terrain images
 htmlimage= ,ArbICON,"Images\Terrain\Icons\Arbalist.png",27.5,13.3,PB
@@ -32,36 +30,59 @@ htmlimage= ,WheelICON,"Images\Terrain\Icons\Wheel.png",27.5,13.3,PB
 htmlimage= ,WhiskyICON,"Images\Terrain\Icons\Whisky.png",27.5,13.3,PB
 htmlimage= ,WormICON,"Images\Terrain\Icons\Worm.png",27.5,13.3,PB
 
+;--------------------------------------
+;Create Fonts
+;--------------------------------------
+HTMLFONT= TitleFont,Duralith,15,,#fff0f5,CENTER
+HTMLFONT= ShapeFont,Ubuntu,10,,#000000,CENTER
+HTMLFONT= ActiveHeaderFont,Ubuntu,10,,#000000,CENTER
+HTMLFONT= ActiveFont,Ubuntu,10,,#000000,CENTER
+
+;--------------------------------------
 ;Define core size/dpi
+;--------------------------------------
 dpi = 300
 Unit = mm
 Cardsize = 63, 88
 
-;Create Fonts
-HTMLFONT= TitleFont,Century Gothic,15,,#fff0f5,CENTER
-HTMLFONT= ShapeFont,Century Gothic,10,,#000000,
-HTMLFONT= ActiveHeaderFont,Candara,10,,#000000,CENTER
-HTMLFONT= ActiveFont,Candara,10,,#000000,CENTER
+;--------------------------------------
+;Create Card
+;--------------------------------------
 
-;Background Colour
+;Add Paper background
 IMAGE=,"Images/Terrain/TerrainColour.png",0,0,63,88
+
+;Add Banner Image
+[XPosBannerImage]=1.5
+[WidthBannerImage]=60
+[HeightBannerImage]=7
+IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Terrain/Titleblock.png",[XPosBannerImage],[E1BY],[WidthBannerImage],[HeightBannerImage]
+IMAGE=LABELRANGE([Effect 2 Type],"Active"),"Images/Terrain/Titleblock.png",[XPosBannerImage],[E2BY],[WidthBannerImage],[HeightBannerImage]
+IMAGE=LABELRANGE([Effect 3 Type],"Active"),"Images/Terrain/Titleblock.png",[XPosBannerImage],[E3BY],[WidthBannerImage],[HeightBannerImage]
+
+;Add Shape Icon
+[PosXShapeI]=32.5
+[PosYShapeI]=11.7
+[WidthShapeI]=27.5
+[HeightShapeI]=13.8
+HTMLTEXT=,[ShapeIcon],[PosXShapeI],[PosYShapeI],[WidthShapeI],[HeightShapeI],#FFFFFF,0,TE,100
+
+;Add Card Border
+[PosXBorder]=0
+[PosYBorder]=0
+[WidthBorder]=63
+[HeightBorder]=88
+IMAGE=,"Images/Terrain/TerrainBoarder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 
 ;Add Title
 HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{200/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
 
 ;Add Shape Text
-HTMLTEXT=,[ShapeText],3,11.7,27.5,13.8,#FFFFFF,0,TE,100,ShapeFont,ShapeFont
-
-;Add Shape Icon
-HTMLTEXT=,[ShapeIcon],32.5,11.7,27.5,13.8,#FFFFFF,0,TE,100
-
-;Add Banner Image
-[XPosBannerImage]=3
-[WidthBannerImage]=54
-[HeightBannerImage]=50
-IMAGE=LABELRANGE([Effect 1 Type],"Active"),"Images/Terrain/Titleblock.png",[XPosBannerImage],[E1BY],[WidthBannerImage],[HeightBannerImage]
-IMAGE=LABELRANGE([Effect 2 Type],"Active"),"Images/Terrain/Titleblock.png",[XPosBannerImage],[E2BY],[WidthBannerImage],[HeightBannerImage]
-IMAGE=LABELRANGE([Effect 3 Type],"Active"),"Images/Terrain/Titleblock.png",[XPosBannerImage],[E3BY],[WidthBannerImage],[HeightBannerImage]
+[PosXShapeT]=3
+[PosYShapeT]=11.7
+[WidthShapeT]=27.5
+[HeightShapeT]=13.8
+HTMLTEXT=,[ShapeText],[PosXShapeT],[PosYShapeT],[WidthShapeT],[HeightShapeT],#FFFFFF,0,TE,100,ShapeFont,ShapeFont
 
 ;Add BannerText
 [XPosBannerText]=3
@@ -76,13 +97,13 @@ HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3 Title],[XPosBannerText],
 [WidthAbillityText]=57
 [HeightAbillityText]=50
 HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1],[XPosAbillityText],[E1Y],[WidthAbillityText],[HeightAbillityText],#FFFFFF,0,TE,100,ActiveFont,ActiveFont
-HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2],[XPosAbillityText],[E1Y],[WidthAbillityText],[HeightAbillityText],#FFFFFF,0,TE,100,ActiveFont,ActiveFont
-HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],[XPosAbillityText],[E1Y],[WidthAbillityText],[HeightAbillityText],#FFFFFF,0,TE,100,ActiveFont,ActiveFont
+HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2],[XPosAbillityText],[E2Y],[WidthAbillityText],[HeightAbillityText],#FFFFFF,0,TE,100,ActiveFont,ActiveFont
+HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3],[XPosAbillityText],[E3Y],[WidthAbillityText],[HeightAbillityText],#FFFFFF,0,TE,100,ActiveFont,ActiveFont
 
-;Background(snap)(size)
-IMAGE=,"Images/Terrain/TerrainBoarder.png",0,0,63,88
-
-SAVE=,"Output\Singles\Terrain\Card_{§Z000}.png"
+;--------------------------------------
+;Export Singles (redundant)
+;--------------------------------------
+;SAVE=,"Output\Singles\Terrain\Card_{§Z000}.png"
 
 
 

@@ -118,4 +118,4 @@ HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[Widt
 ;--------------------------------------
 ;Export Singles (redundant)
 ;--------------------------------------
-SAVE=,"Output\Singles\Card_{§Z000}.png"
+;SAVE=,"Output\Singles\Card_{§Z000}.png"
