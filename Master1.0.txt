@@ -50,7 +50,7 @@ HTMLFONT=AbillityCritFont,Ubuntu Light,10,,#000000
 ;--------------------------------------
 ;Define core size/dpi
 ;--------------------------------------
-dpi = 1200
+dpi = 300
 Unit = mm
 Cardsize = 63, 88
 
@@ -118,4 +118,4 @@ HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[Widt
 ;--------------------------------------
 ;Export Singles (redundant)
 ;--------------------------------------
-SAVE=,"Output\Singles\Card_{§Z000}.png"
+;SAVE=,"Output\Singles\Card_{§Z000}.png"
