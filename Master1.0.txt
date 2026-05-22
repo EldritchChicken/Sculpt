@@ -50,7 +50,7 @@ HTMLFONT=AbillityCritFont,Ubuntu Light,10,,#000000
 ;--------------------------------------
 ;Define core size/dpi
 ;--------------------------------------
-dpi = 1200
+dpi = 300
 Unit = mm
 Cardsize = 63, 88
 
