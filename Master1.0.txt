@@ -1,3 +1,4 @@
+;LINK= TestSet.xlsx
 LINK= Master1.0.xlsx
 
 ;-------------------------------------
@@ -29,16 +30,16 @@ htmlimage= ,Hex3,"Images\Inline\Hex3.png",13.2,12.3,PM
 ;Create Fonts
 ;--------------------------------------
 ;Card Top Fonts
-HTMLFONT=TitleFont,Duralith,17,,#000000,CENTER
+HTMLFONT=TitleFont,Duralith,15,,#000000,CENTER
 HTMLFONT=TypeFont,Duralith,12,,#000000
 HTMLFONT=ChargeFont,Duralith,10.5,,#000000
 
 ;Header Fonts
-HTMLFONT=BannerActiveFont,Ubuntu,10.5,,#000000
-HTMLFONT=BannerReactionFont,Ubuntu,10.5,,#000000
-HTMLFONT=BannerPassiveFont,Ubuntu,10.5,,#000000
-HTMLFONT=BannerAttackFont,Ubuntu,10.5,,#000000
-HTMLFONT=BannerCritFont,Ubuntu,10.5,,#000000
+HTMLFONT=BannerActiveFont,Ubuntu,10.5,,#000000,CENTER
+HTMLFONT=BannerReactionFont,Ubuntu,10.5,,#000000,CENTER
+HTMLFONT=BannerPassiveFont,Ubuntu,10.5,,#000000,CENTER
+HTMLFONT=BannerAttackFont,Ubuntu,10.5,,#000000,CENTER
+HTMLFONT=BannerCritFont,Ubuntu,10.5,,#000000,CENTER
 
 ;Body Fonts
 HTMLFONT=AbillityActiveFont,Ubuntu Light,10,,#000000
@@ -58,7 +59,7 @@ Cardsize = 63, 88
 ;Create Card
 ;--------------------------------------
 ;Add Paper background
-IMAGE=1-{(NAME)},"Images/Templates/paper.jpg",0,0,63,88
+IMAGE=1-{(NAME)},"Images/Templates/paper.png",0,0,63,88
 
 ;Add Banner Images
 [ActiveBanner]="Images/Templates/Banners/BannerActive.png"
@@ -78,21 +79,32 @@ IMAGE=1-{(NAME)},[[Effect 3 Type]Banner],[PosXBannerImage],[E3BY],[WidthBannerIm
 [PosYBorder]=0
 [WidthBorder]=63
 [HeightBorder]=88
-IMAGE=LABELRANGE([Type],"Limb"),"Images/Templates/Borders/LimbBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
-IMAGE=LABELRANGE([Type],"Impression"),"Images/Templates/Borders/ImpressionBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
-IMAGE=LABELRANGE([Type],"Form"),"Images/Templates/Borders/FormBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([NAN_Type],"LimbB"),"Images/Templates/Borders/LimbBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([NAN_Type],"LimbA"),"Images/Templates/Borders/LimbBorderA.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([NAN_Type],"ImpressionB"),"Images/Templates/Borders/ImpressionBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([NAN_Type],"ImpressionA"),"Images/Templates/Borders/ImpressionBorderA.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([NAN_Type],"FormB"),"Images/Templates/Borders/FormBorder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+IMAGE=LABELRANGE([NAN_Type],"FormA"),"Images/Templates/Borders/FormBorderA.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 
 ;Add Title Text
-HTMLTEXT=1-{(NAME)},[NAME],3,2.3,57,10,#FFFFFF,0,BE,100,TitleFont
+[PosXTitle]=0
+[PosYTitle]=2.3
+[WidthTitle]=63
+[HeightTitle]=11
+HTMLTEXT=,[NAME],[PosXTitle],[PosYTitle],[WidthTitle],[HeightTitle],#FFFFFF,0,BE,100,TitleFont
 
 ;Add Type Text
-HTMLTEXT=1-{(NAME)},[TYPE],3,11,31,6,#FFFFFF,0,BE,100,TypeFont
+[PosXType]=3.0
+[PosYType]=11.0
+[WidthType]=31
+[HeightType]=6
+HTMLTEXT=,[TYPE],[PosXType],[PosYType],[WidthType],[HeightType],#FFFFFF,0,BE,100,TypeFont
 
 ;Add Charges
-[PosXChargesLimb]=35
+[PosXChargesLimb]=37
 [PosXChargesImpression]=42
 [PosXChargesForm]=35
-[PosYCharges]=11.5
+[PosYCharges]=12.0
 [WidthCharges]=26
 [HeightCharges]=10
 HTMLTEXT=LABELRANGE([Type],"Limb"),[Charges],[PosXChargesLimb],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
@@ -100,8 +112,8 @@ HTMLTEXT=LABELRANGE([Type],"Impression"),[Charges],[PosXChargesImpression],[PosY
 HTMLTEXT=LABELRANGE([Type],"Form"),[Charges],[PosXChargesForm],[PosYCharges],[WidthCharges],[HeightCharges],#FFFFFF,0,BE,100,ChargeFont
 
 ;Add Banner Text
-[PosXBannerText]=3
-[WidthBannerText]=57
+[PosXBannerText]=0
+[WidthBannerText]=63
 [HeightBannerText]=10
 HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1 Title],[PosXBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TBE,100,Banner[Effect 1 Type]Font
 HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2 Title],[PosXBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,BTE,100,Banner[Effect 2 Type]Font
