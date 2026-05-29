@@ -11,20 +11,20 @@ HTMLIMAGE= ,WeirdT,"Images\Inline\tokenw.png",3.2,3.2,P
 HTMLIMAGE= ,multtok,"Images\Inline\multitoken.png",3.2,3.2,P
 HTMLIMAGE= ,CompT,"Images\Inline\tokenc.png",3.2,3.2,P
 HTMLIMAGE= ,TempcT,"Images\Inline\tokenct.png",3.2,3.2,P
-htmlimage= ,ChargeT,"Images\Inline\gear2.png",3.2,3.2,P
-htmlimage= ,ChargeMID,"Images\Inline\gear2.png",5.5,5.5, P
-htmlimage= ,ChargeBIG,"Images\Inline\gear2.png",6,6,P,0,0
+HTMLIMAGE= ,ChargeT,"Images\Inline\gear2.png",3.2,3.2,P
+HTMLIMAGE= ,ChargeMID,"Images\Inline\gear2.png",5.5,5.5, P
+HTMLIMAGE= ,ChargeBIG,"Images\Inline\gear2.png",6,6,P,0,0
 
 ;Player card images
-htmlimage= ,hornshexes,"Images\Inline\hornshexes.png",18,8,P,0,0
+HTMLIMAGE= ,hornshexes,"Images\Inline\hornshexes.png",18,8,P,0,0
 
 ;Terrain images
-htmlimage= ,Hex1a,"Images\Inline\Hex1a.png",3.2,3.2,PM
-htmlimage= ,Hex1big,"Images\Inline\Hex1a.png",6.4,6.4,PM
-htmlimage= ,Hex2wide,"Images\Inline\Hex2wide.png",5.4,3.2,PM
-htmlimage= ,Hex1b,"Images\Inline\Hex1b.png",5.4,5.5,PM
-htmlimage= ,Hex2,"Images\Inline\Hex2.png",8,7.7, PM
-htmlimage= ,Hex3,"Images\Inline\Hex3.png",13.2,12.3,PM
+HTMLIMAGE= ,Hex1a,"Images\Inline\Hex1a.png",3.2,3.2,PM
+HTMLIMAGE= ,Hex1big,"Images\Inline\Hex1a.png",6.4,6.4,PM
+HTMLIMAGE= ,Hex2wide,"Images\Inline\Hex2wide.png",5.4,3.2,PM
+HTMLIMAGE= ,Hex1b,"Images\Inline\Hex1b.png",5.4,5.5,PM
+HTMLIMAGE= ,Hex2,"Images\Inline\Hex2.png",8,7.7, PM
+HTMLIMAGE= ,Hex3,"Images\Inline\Hex3.png",13.2,12.3,PM
 
 ;--------------------------------------
 ;Create Fonts
@@ -39,7 +39,7 @@ HTMLFONT=BannerActiveFont,Ubuntu,10.5,,#000000,CENTER
 HTMLFONT=BannerReactionFont,Ubuntu,10.5,,#000000,CENTER
 HTMLFONT=BannerPassiveFont,Ubuntu,10.5,,#000000,CENTER
 HTMLFONT=BannerAttackFont,Ubuntu,10.5,,#000000,CENTER
-HTMLFONT=BannerCritFont,Ubuntu,10.5,,#000000,CENTER
+HTMLFONT=BannerCritFont,Ubuntu,10.5,B,#000000,CENTER
 
 ;Body Fonts
 HTMLFONT=AbillityActiveFont,Ubuntu Light,10,,#000000
