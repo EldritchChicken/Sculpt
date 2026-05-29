@@ -4,11 +4,11 @@ LINK= Terrain.xlsx
 ;Import token images
 ;-------------------------------------
 ;Basic images
-htmlimage= ,FleshT,"Images\Inline\TokenH.png",3.2,3.2,PB,,,,,0.05
-htmlimage= ,JazzT,"Images\Inline\TokenJ.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,WeirdT,"Images\Inline\TokenW.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,compT,"Images\Inline\TokenC.png",3.2,3.2,PB,,,,,0.05
-HTMLIMAGE= ,tempcT,"Images\Inline\TokenCT.png",3.2,3.2,PB,,,,,0.05
+htmlimage= ,FleshT,"Images\Inline\TokenH.png",3.2,3.2,PB
+htmlimage= ,JazzT,"Images\Inline\TokenJ.png",3.2,3.2,PB
+HTMLIMAGE= ,WeirdT,"Images\Inline\TokenW.png",3.2,3.2,PB
+HTMLIMAGE= ,compT,"Images\Inline\TokenC.png",3.2,3.2,PB
+HTMLIMAGE= ,tempcT,"Images\Inline\TokenCT.png",3.2,3.2,PB
 
 ;Terrain images
 htmlimage= ,ArbICON,"Images\Terrain\Icons\Arbalist.png",27.5,13.3,PB
@@ -29,6 +29,9 @@ htmlimage= ,TunnelICON,"Images\Terrain\Icons\Tunnel.png",27.5,13.3,PB
 htmlimage= ,WheelICON,"Images\Terrain\Icons\Wheel.png",27.5,13.3,PB
 htmlimage= ,WhiskyICON,"Images\Terrain\Icons\Whisky.png",27.5,13.3,PB
 htmlimage= ,WormICON,"Images\Terrain\Icons\Worm.png",27.5,13.3,PB
+htmlimage= ,cliffICON,"Images\Terrain\Icons\clifficon.png",27.5,13.3,PB
+htmlimage= ,WeirdICON,"Images\Terrain\Icons\weirdicon.png",27.5,13.3,PB
+htmlimage= ,gateICON,"Images\Terrain\Icons\gateicon.png",27.5,13.3,PB
 
 ;--------------------------------------
 ;Create Fonts
