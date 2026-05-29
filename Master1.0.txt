@@ -11,9 +11,9 @@ HTMLIMAGE= ,WeirdT,"Images\Inline\tokenw.png",3.2,3.2,P
 HTMLIMAGE= ,multtok,"Images\Inline\multitoken.png",3.2,3.2,P
 HTMLIMAGE= ,CompT,"Images\Inline\tokenc.png",3.2,3.2,P
 HTMLIMAGE= ,TempcT,"Images\Inline\tokenct.png",3.2,3.2,P
-HTMLIMAGE= ,ChargeT,"Images\Inline\gear2.png",3.2,3.2,P
-HTMLIMAGE= ,ChargeMID,"Images\Inline\gear2.png",5.5,5.5, P
-HTMLIMAGE= ,ChargeBIG,"Images\Inline\gear2.png",6,6,P,0,0
+HTMLIMAGE= ,ChargeT,"Images\Inline\tokencharge.png",3.2,3.2,P
+HTMLIMAGE= ,ChargeMID,"Images\Inline\tokencharge.png",5.5,5.5, P
+HTMLIMAGE= ,ChargeBIG,"Images\Inline\tokencharge.png",6,6,P,0,0
 
 ;Player card images
 HTMLIMAGE= ,hornshexes,"Images\Inline\hornshexes.png",18,8,P,0,0
@@ -127,6 +127,7 @@ HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1],[PosXAbillity],[E1Y],[Widt
 HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2],[PosXAbillity],[E2Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BTE,100,Abillity[Effect 2 Type]Font
 HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BTE,100,Abillity[Effect 3 Type]Font
 
+GAP = 0.5,0.5
 ;--------------------------------------
 ;Export Singles (redundant)
 ;--------------------------------------

@@ -48,6 +48,7 @@ dpi = 300
 Unit = mm
 Cardsize = 63, 88
 
+
 ;--------------------------------------
 ;Create Card
 ;--------------------------------------
@@ -76,7 +77,7 @@ HTMLTEXT=,[ShapeIcon],[PosXShapeI],[PosYShapeI],[WidthShapeI],[HeightShapeI],#FF
 [WidthBorder]=63
 [HeightBorder]=88
 IMAGE=,"Images/Terrain/TerrainBoarder.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
-
+GAP = 0.5,0.5
 ;Add Title
 HTMLTEXT="1-{(NAME)}",[NAME],{320/62}%,{200/88}%,{54000/600}%,{600/75}%,#FFFFFF,0,TE,100,TitleFont,TitleFont
 
