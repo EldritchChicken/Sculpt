@@ -127,7 +127,7 @@ HTMLTEXT=LABELRANGE([Effect 1 Title],<>""),[Effect 1],[PosXAbillity],[E1Y],[Widt
 HTMLTEXT=LABELRANGE([Effect 2 Title],<>""),[Effect 2],[PosXAbillity],[E2Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BTE,100,Abillity[Effect 2 Type]Font
 HTMLTEXT=LABELRANGE([Effect 3 Title],<>""),[Effect 3],[PosXAbillity],[E3Y],[WidthAbillity],[HeightAbillity],#FFFFFF,0,BTE,100,Abillity[Effect 3 Type]Font
 
-GAP = 0.5,0.5
+
 ;--------------------------------------
 ;Export Singles (redundant)
 ;--------------------------------------
