@@ -91,9 +91,9 @@ HTMLTEXT=,[ShapeText],[PosXShapeT],[PosYShapeT],[WidthShapeT],[HeightShapeT],#FF
 [XPosBannerText]=3
 [WidthBannerText]=54
 [HeightBannerText]=50
-HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1 Title],[XPosBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
-HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2 Title],[XPosBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
-HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3 Title],[XPosBannerText],[E3TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TE,100,ActiveHeaderFont,ActiveHeaderFont
+HTMLTEXT=labelrange([Effect 1 Type],"Active"),[Effect 1 Title],[XPosBannerText],[E1TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TEB,100,ActiveHeaderFont,ActiveHeaderFont
+HTMLTEXT=labelrange([Effect 2 Type],"Active"),[Effect 2 Title],[XPosBannerText],[E2TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TEB,100,ActiveHeaderFont,ActiveHeaderFont
+HTMLTEXT=labelrange([Effect 3 Type],"Active"),[Effect 3 Title],[XPosBannerText],[E3TY],[WidthBannerText],[HeightBannerText],#FFFFFF,0,TEB,100,ActiveHeaderFont,ActiveHeaderFont
 
 ;Add Abillity Text
 [XPosAbillityText]=3

@@ -14,7 +14,9 @@ Cardsize = 63, 88
 [PosYBorder]=0
 [WidthBorder]=63
 [HeightBorder]=88
-IMAGE= 1-9, "Images/Backs/Form.jpg",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+
+IMAGE= 1-9, "Images/Backs/terrain_back.png",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
+GAP=0.5,0.5
 ;IMAGE= 10-18,"Images/Backs/Impression.jpg",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 ;IMAGE= 19-27,"Images/Backs/Form.jpg",[PosXBorder],[PosYBorder],[WidthBorder],[HeightBorder]
 
